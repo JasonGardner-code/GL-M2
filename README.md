@@ -43,10 +43,13 @@ g++ main.cpp -o temperature-sensor
 ***********************************
 ### connect_to_enb.sh ###
 
-In this script, you need to replace the `ENB_IP` variable with the actual IP address of your eNB node, and `ENB_PORT` with the appropriate port number. 
+In this updated script, you need to replace the `SERIAL_PORT` variable with the appropriate serial port that corresponds to your GL-M2 router. You can check the available serial ports using the `ls /dev/tty*` command.
 
-The script uses the `nc` command (netcat) to initiate a connection to the eNB node. The `-z` option checks if the connection is successful, and the `-v` option provides verbose output. If the connection is successful, it prints a success message; otherwise, it prints a failure message.
+The script starts `minicom` with the specified baud rate (`BAUD_RATE`) and serial port (`SERIAL_PORT`). It also appends the output to a log file (`enb.log`) for further analysis if needed.
 
-You can save this script to a file (e.g., `connect_to_enb.sh`), make it executable using `chmod +x connect_to_enb.sh`, and then run it on startup or as needed. Do not run this outside a properly prepared and tested RF testing enclosure.
+After starting `minicom`, the script sends the AT command `AT+CONNECT=$ENB_IP:$ENB_PORT` to establish the connection with the eNB node over the air. The command is sent using `tee -a $SERIAL_PORT`, which both sends the command and appends it to the serial port for `minicom` to transmit.
+
+You can save this script to a file (e.g., `connect_to_enb.sh`), make it executable using `chmod +x connect_to_enb.sh`, and then run it on your GL-M2 router. Make sure to replace the variables `SERIAL_PORT`, `BAUD_RATE`, `ENB_IP`, and `ENB_PORT` with the appropriate values.
+Do not run this outside a properly prepared and tested RF testing enclosure.
 
 **********************************
