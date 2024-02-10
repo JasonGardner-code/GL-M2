@@ -1,5 +1,3 @@
-Certainly! Here's a cheat sheet for common commands used in the `minicom` terminal emulator:
-
 1. **minicom**: Start `minicom`.
 
 2. **minicom -b \<baud_rate\> -D \<serial_port\>**: Start `minicom` with a specific baud rate and serial port.
