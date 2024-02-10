@@ -1,0 +1,41 @@
+Certainly! Here's a cheat sheet for common AT commands used in serial communication:
+
+1. **AT**: Test command to check if the communication channel is working. Responds with "OK" if successful.
+
+2. **AT+CGMI**: Get the manufacturer information of the device.
+
+3. **AT+CGMM**: Get the model information of the device.
+
+4. **AT+CGSN**: Get the device's IMEI number (International Mobile Equipment Identity).
+
+5. **AT+CIMI**: Get the device's IMSI number (International Mobile Subscriber Identity).
+
+6. **AT+CPIN?**: Check the status of the SIM card.
+
+7. **AT+CSQ**: Check the signal strength. Returns a value between 0 and 31, where higher values indicate better signal quality.
+
+8. **AT+CREG?**: Check the network registration status. Returns information about the current network registration.
+
+9. **AT+CGATT?**: Check if the device is attached to the GPRS network.
+
+10. **AT+COPS?**: Get the current network operator.
+
+11. **AT+CGACT?**: Check the status of the PDP context activation.
+
+12. **AT+CGDCONT**: Set the PDP context parameters for establishing a GPRS connection.
+
+13. **AT+CGDATA**: Start a data connection using a specified PDP context.
+
+14. **AT+CMGS**: Send an SMS message.
+
+15. **AT+CMGR**: Read an SMS message.
+
+16. **AT+CMGD**: Delete an SMS message.
+
+17. **ATD**: Dial a phone number.
+
+18. **ATA**: Answer an incoming call.
+
+19. **ATH**: Hang up a call.
+
+20. **AT+CSMP**: Set the SMS text mode parameters.
