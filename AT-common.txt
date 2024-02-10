@@ -1,4 +1,4 @@
-Certainly! Here's a cheat sheet for common AT commands used in serial communication:
+cheat sheet for common AT commands used in serial communication:
 
 1. **AT**: Test command to check if the communication channel is working. Responds with "OK" if successful.
 
