@@ -41,7 +41,7 @@ g++ main.cpp -o temperature-sensor
 3. The program will start sending temperature readings to the specified IP address.
 
 ***********************************
-###connect_to_enb.sh###
+### connect_to_enb.sh ###
 
 In this script, you need to replace the `ENB_IP` variable with the actual IP address of your eNB node, and `ENB_PORT` with the appropriate port number. 
 
