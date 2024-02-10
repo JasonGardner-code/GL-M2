@@ -1,0 +1,41 @@
+Certainly! Here's a cheat sheet for common commands used in the `minicom` terminal emulator:
+
+1. **minicom**: Start `minicom`.
+
+2. **minicom -b \<baud_rate\> -D \<serial_port\>**: Start `minicom` with a specific baud rate and serial port.
+
+3. **Ctrl+A, Z**: Access the `minicom` command menu.
+
+4. **Ctrl+A, X**: Exit `minicom`.
+
+5. **Ctrl+A, S**: View the current `minicom` configuration.
+
+6. **Ctrl+A, O**: Change the serial port settings.
+
+7. **Ctrl+A, M**: Send a file through the serial port.
+
+8. **Ctrl+A, L**: Capture the `minicom` session to a file.
+
+9. **Ctrl+A, R**: Start/stop recording the `minicom` session to a file.
+
+10. **Ctrl+A, F**: Enable/disable hardware flow control (RTS/CTS).
+
+11. **Ctrl+A, H**: Enable/disable software flow control (XON/XOFF).
+
+12. **Ctrl+A, Q**: Enable/disable local echo.
+
+13. **Ctrl+A, E**: Enable/disable line wrap.
+
+14. **Ctrl+A, Y**: Enable/disable line feed.
+
+15. **Ctrl+A, B**: Enable/disable backspace key.
+
+16. **Ctrl+A, I**: Enable/disable input translation.
+
+17. **Ctrl+A, K**: Enable/disable keyboard locks.
+
+18. **Ctrl+A, P**: Enable/disable ANSI color.
+
+19. **Ctrl+A, U**: Enable/disable modem control.
+
+20. **Ctrl+A, T**: Enable/disable line timing.
